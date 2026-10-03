@@ -1,0 +1,22 @@
+name: bm-minecraft-spawn-egg-plus
+version: "26.3_0.0.1"
+main: bm.minecraft.spawn.egg.plus.BmMinecraftSpawnEggPlusPlugin
+api-version: '26.3'
+description: "生物蛋 PLUS。"
+authors:
+  - "[B.M] 圓周率™3.14"
+website: "http://exnormal.com:81/"
+
+commands:
+  bm-minecraft-spawn-egg-plus:
+    description: 管理 bm-minecraft-spawn-egg-plus。
+    usage: /bm-minecraft-spawn-egg-plus [0|1|info|status|reload]
+    permission: bm-minecraft-spawn-egg-plus.admin
+
+permissions:
+  bm-minecraft-spawn-egg-plus.use:
+    description: 允許合成、捕捉與放出生物。
+    default: true
+  bm-minecraft-spawn-egg-plus.admin:
+    description: 允許管理 bm-minecraft-spawn-egg-plus。
+    default: op
